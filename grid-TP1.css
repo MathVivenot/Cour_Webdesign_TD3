@@ -1,0 +1,144 @@
+.characters{
+  display: grid;
+    grid-gap: 25px 20px;
+    grid-template-areas:
+      "hero"
+      "sidekick-a"
+      "sidekick-b"
+      "sidekick-c"
+      "sidekick-d"
+      "accolyte-a"
+      "accolyte-b"
+      "accolyte-c"
+      "accolyte-d";
+}
+
+
+.character{
+  border-radius: 15px;
+  border-width: 2px;
+  border-style: solid;
+  text-align: center;
+  padding: 10px;
+}
+
+
+.finn{
+  border-color: #00ADE3;
+  background-color: #FFFFFF;
+}
+
+
+.jack{
+  border-color: #FCB823;
+  background-color: #FCB823;
+}
+
+
+.beemo{
+    border-color: #BAE0CD;
+    background-color: #23B1A5;
+}
+
+
+.marceline{
+    color:#FFFFFF;
+    border-color: #EEF1F3;
+    background-color: #020306;
+}
+
+
+.miss-rainicorn{
+  border-color: #E0ABCE;
+  background-color: #F8F390;
+}
+
+
+.princesse-chewing-gum{
+    border-color: #E7CEE3;
+    background-color: #F299BF;
+}
+
+
+.princesse-flammes{
+    color:#FFFFFF;
+    border-color: #FFA300;
+    background-color: #FF410B;
+}
+
+
+.princesse-lumpy-space{
+    border-color: #BB9DC8;
+    background-color: #FFDF74;
+}
+
+
+.roi{
+    color:#FFFFFF;
+    border-color: #A3D8F5;
+    background-color: #0072BC;
+}
+
+.princesse-flammes     { grid-area: hero; }
+.beemo                 { grid-area: sidekick-a; }
+.marceline             { grid-area: sidekick-b; }
+.finn                  { grid-area: sidekick-c; }
+.miss-rainicorn        { grid-area: sidekick-d; }
+.princesse-chewing-gum { grid-area: accolyte-a; }
+.princesse-lumpy-space { grid-area: accolyte-b; }
+.jack                  { grid-area: accolyte-c; }
+.roi                   { grid-area: accolyte-d; }
+
+
+
+
+@media only screen and (min-width: 640px) {
+  .characters{
+    grid-template-areas:
+    "hero         hero" 
+    "sidekick-a   sidekick-b"
+    "sidekick-d   sidekick-c"
+    "accolyte-a   accolyte-c"
+    "accolyte-b   accolyte-d";    
+              }
+  }
+
+
+  
+
+@media only screen and (min-width: 768px) {
+  .characters{
+    grid-template-areas:
+    "hero         hero" 
+    "accolyte-a   sidekick-b"
+    "sidekick-d   sidekick-a"
+    "accolyte-c   accolyte-c"
+    "accolyte-b   sidekick-c";
+          
+              }
+  }
+
+@media only screen and (min-width: 1024px) {
+  .characters{
+    grid-template-areas:
+      "hero           hero            hero"
+      "sidekick-a     sidekick-a      sidekick-a"
+      "sidekick-b     sidekick-c      sidekick-d"
+      "accolyte-a     accolyte-a      accolyte-a"
+      "accolyte-b     accolyte-c      accolyte-d";
+          
+              }
+  }
+
+@media only screen and (min-width: 1280px) {
+  .characters{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "hero           hero            hero"
+      "sidekick-a     sidekick-b      sidekick-b"
+      "sidekick-c     sidekick-c      sidekick-d"
+      "accolyte-a     accolyte-b      accolyte-b"
+      "accolyte-c     accolyte-c      accolyte-d";
+          
+              }
+  }
